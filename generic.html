@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by JRR2025
+	Custom version based on HTML5 UP template
+  	Original template by html5up.net | @ajlkn
+-->
+<html>
+	<head>
+		<title>Generic - Solid State by JRR2025</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+	</head>
+	  
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Solid State</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="generic.html">BIBLIOGRAPHY</a></li>
+								<li><a href="#">Log In</a></li>
+								<li><a href="#">Sign Up</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Generic</h2>
+								<p>Access to My Internship Work and Bibliographic References.</p>
+								<p>
+									You can conveniently view the PDF document directly in your browser or download it for offline consultation by clicking 
+									<a href="https://github.com/Nathan17reunion/Extraction-Kinematik_shoreline/blob/main/references_2025_MITANTSOA.pdf" 
+									   target="_blank" rel="noopener noreferrer" style="color: #6699CC; font-weight: bold;" download>
+									  here.
+									</a> 
+								  </p>								  
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Contribution to the report</h3>
+									<p>I warmly invite you to contribute to the improvement of my internship report by sharing your corrections, suggestions, remarks, or self-critiques. Your expertise and feedback are invaluable to enhance the quality of this work.</p>
+
+									<p>The report is available online in French as a Google Doc accessible <a href="https://docs.google.com/document/d/17w4b0y-nsSU90pQe2PeqFmBeo11MhK0rdLJaTGBfwtU/edit?usp=sharing" target="_blank" rel="noopener noreferrer" style="color: #6699CC; font-weight: bold;">here</a>. Please feel free to leave your comments!</p>
+
+									<p>The SAET script has been recently updated and is accessible <a href="https://github.com/jpalomav/SAET_master" target="_blank" rel="noopener noreferrer" style="color: #6699CC; font-weight: bold;">here</a> for an in-depth exploration of the mathematical methods used to convert a set of pixels into a smooth vector accurately representing the shoreline. This approach ensures a rigorous and reliable extraction of the exact shoreline position.</p>
+
+									<h3 class="major">Explanation</h3>
+									<p>If you wish to understand in detail the steps I followed to validate the extracted shoreline positions, the complete script is available online via Google Colab. This script plays a crucial role in ensuring the accuracy and reliability of the precise location of each shoreline. Feel free to consult it <a href="https://colab.research.google.com/drive/1aU6yh2PoUDjFt4Gwrk3OqwlBpmckW3uj?usp=sharing" target="_blank" rel="noopener noreferrer" style="color: #6699CC; font-weight: bold;">here</a> to gain a deeper understanding of the methodology employed and the validation processes performed.</p>
+
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="images/1.png" alt="" /></a>
+											<h3 class="major">INTRODUCTION</h3>
+											<p>
+												The coastline of Réunion Island extends for approximately 
+												<a href="https://www.observatoire-littoral-lareunion.re/accueil" target="_blank" rel="noopener noreferrer" style="color: #6699CC; font-weight: bold;">250</a> kilometers and is subject to significant erosion, affecting nearly 50% of its length, with about 12% experiencing severe erosion. This phenomenon, documented by several studies 
+												<a href="http://infoterre.brgm.fr/rapports/RP-53307-FR.pdf" target="_blank" rel="noopener noreferrer" style="color: #6699CC; font-weight: bold;">De La Torre, Y., (2004)</a>, is mainly manifested by the retreat of sandy beaches and unconsolidated micro-cliffs, while basaltic cliffs undergo a slower but steady recession.
+											  </p>
+											  <p>
+												Various methods are employed to measure the shoreline position at a local scale. These include in situ surveys using DGPS systems, as conducted by 
+												<a href="https://scholar.google.com/scholar?q=Suivi+morphodynamique+des+plages+récifales+de+La+Réunion+en+contexte+d%27observatoire+Mahabot+2016" target="_blank" rel="noopener noreferrer" style="color: #6699CC; font-weight: bold;">Mahabot M., (2016)</a>, as well as the use of surveillance cameras targeting restricted areas of coral sandy beaches, as in the work of 
+												<a href="https://scholar.google.com/scholar?q=Caractérisation+de+l%27hydro-morphodynamique+de+la+zone+intertidale+du+récif+frangeant+de+l%27Hermitage+par+caméra+vidéo+Machabée+2024" target="_blank" rel="noopener noreferrer" style="color: #6699CC; font-weight: bold;">Machabée J., (2024)</a>. These approaches offer high local accuracy but are limited in spatial coverage.
+											  </p>
+											  <p>
+												To ensure comprehensive coverage of the Réunion coastline, the use of satellite imagery—particularly Sentinel-2 and Landsat—is preferred. These datasets are sometimes supplemented by very high spatial resolution images to refine the analysis. The main challenge lies in converting water pixels, identified through spectral index masks, into a continuous, smooth, and accurate shoreline.
+											  </p>
+											  <p>
+												Traditional methods often rely on manual photointerpretation, especially using Pléiades imagery, which is labor-intensive and not suitable for the analysis of extensive time series.
+											  </p>
+											  <p>
+												In this context, the present work proposes the application of an automatic shoreline extraction method inspired by the SAET tool. This approach enables the shoreline to be extracted without manual intervention, thereby providing rapid, reproducible, and reliable monitoring of coastal evolution over several years.
+											  </p>
+											  <a href="#" class="special">Learn more</a>
+											  
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/2.png" alt="" /></a>
+											<h3 class="major">ATERIALS AND METHODS</h3>
+											<p>
+												<a href="https://github.com/jpalomav/SAET_master" target="_blank" rel="noopener noreferrer" style="color: #6699CC; font-weight: bold;">
+												  SAET
+												</a> (Shoreline Automatic Extraction Tool) is a Python-based software designed for the automatic detection of shorelines from Sentinel-2 satellite imagery. Initially tested on European sandy beaches, this tool has been successfully adapted to the specific context of Réunion Island’s coastline. SAET is distinguished by its full autonomy, integrating the search, download, and automatic processing of satellite scenes, thereby facilitating multi-year temporal monitoring.
+											  </p>
+											  
+											<p>
+												To optimize computation time, the study area is segmented into hydrosedimentary cells. Spectral indices are then calculated to differentiate terrestrial surfaces from aquatic surfaces, enabling the creation of a binary mask where land is coded as 0 and water as 1. A key step in the processing involves applying a morphological method specific to SAET, using erosion or dilation operations. Erosion refines object boundaries by reducing their contours, thereby eliminating isolated pixels and improving edge precision. Conversely, dilation enlarges objects by filling gaps but can artificially widen the beach and shift the land-sea boundary. In the pixel-based representation, the pixel initially coded as 1 is transformed into an eroded or dilated pixel coded as 2, and the difference between these two states (coded as 3) allows precise extraction of the shoreline position. In this work, erosion was preferred due to its superior ability to accurately locate the exact shoreline pixel.
+											  </p>
+											  <p>
+												This process can be modeled as a two-dimensional mathematical function, where the zero Laplacian equation is solved to extract the exact shoreline points. Subsequently, areas affected by clouds, gaps, or shadows are masked to obtain an initial shoreline approximation (APS). By combining this APS with the SWIR1 band, the detection is refined, resulting in a shoreline that more accurately reflects reality.
+											  </p>
+											  <p>
+												Finally, shoreline dynamics are analyzed from the extracted shorelines using the DSAS (Digital Shoreline Analysis System) tool, which enables evaluation of temporal beach evolution and identification of erosion or accretion trends.
+											  </p>
+											  <a href="#" class="special">Learn more</a>											  
+										</article>
+
+										<article>
+											<a href="#" class="image"><img src="images/3.png" alt="" /></a>
+											<h3 class="major">RESULTS</h3>
+											<p>
+												After several series of tests and processing steps, optimal parameters were determined for each morphological unit within the hydrosedimentary cells. These parameters notably include the water index, classification threshold, applied morphological method, cloud mask, and the algorithm’s kernel size, where a kernel size of 3 pixels generally provided higher accuracy than 5.
+											  </p>
+											  <p>
+												To illustrate these results, four representative study sites were selected. The first site, L’Hermitage, is a coral white sand beach punctuated by beach rock formations. This area features a back-reef depression, which complicates the automatic detection of the shoreline. The second site corresponds to Saint-Paul Bay, characterized by black or green sands, fed both by the littoral drift from the Rivière des Galets and by frontal breaking waves, promoting beach accretion. The third site is located at the mouth, or delta, of the Rivière des Galets, a complex dynamic zone where the diversity of impermeable sediments and small freshwater flows make shoreline detection particularly challenging. Finally, the fourth site, Saint-Benoît beach, consists of pebble ridges exposed to cyclonic swell, with a littoral drift oriented from south to north, transporting sediments from the Rivière des Roches to nourish the beach.
+											  </p>
+											  <p>
+												These site-specific characteristics are critical for choosing the appropriate parameters for each morphological unit. The optimal parameter settings for each site are presented in the appendix. The notation “and/or” indicates the possibility of selecting among several options, which will be exploited in the continuation of this work to combine different indices.
+											  </p>
+											  <p>
+												Each figure displays the temporal series of shorelines, from the oldest to the most recent. It is observed that the shoreline is accurately positioned on the High Water Line (HWL), consistent with the capability of the SAET tool to detect this boundary. Cliffed or volcanic coasts were not processed, as the script is primarily adapted for sandy beaches, although successful adaptation to pebble beaches was achieved.
+											  </p>
+											  <p>
+												At the L’Hermitage site, a slight undulation is visible, related to the presence of beach rock, a coarser sediment. Between the back-reef depression and the beach, the water is clear, and the index threshold used—especially the NDWI—allows a good distinction between water and land pixels according to SAET’s logic. The use of the NDWI represents an innovation in this work, as this index was not utilized in previous versions of SAET.
+											  </p>
+											  <p>
+												In Saint-Paul Bay, a coastal infrastructure in the form of a bridge is present. Artificially modified zones are considered stable, justifying the subdivision of the hydrosedimentary cell into two distinct parts.
+											  </p>
+											  <p>
+												Finally, at Saint-Benoît, the shoreline is highly dynamic, exhibiting strong spatial and temporal variability. The multiple lines illustrate this mobility: the shoreline oscillates within a broad zone, reflecting the complexity of erosion, accretion, and sediment redistribution processes at the river-sea interface.
+											  </p>
+											  <a href="#" class="special">Learn more</a>
+											  
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/4.png" alt="" /></a>
+											<h3 class="major">DISCUSSION AND CONCLUSION</h3>
+											<p>
+												The validation of the precise shoreline position relies on the consideration of multiple environmental and hydrodynamic factors. In this context, tidal data provided by SHOM were integrated. Although Réunion Island experiences a diurnal tidal regime, this significantly influences shoreline measurements. These data allow each satellite image to be associated with a specific tidal stage: low, intermediate, or high tide.
+											  </p>
+											  <p>
+												Furthermore, wave data from the CANDHIS program were utilized to identify significant water heights during notable events such as very intense tropical cyclones. All these data are synthesized and graphically represented to compare the detected shoreline positions with the observed hydrodynamic conditions. This correlation confirms the consistency of the obtained results.
+											  </p>
+											  <p>
+												Subsequently, a kinematic analysis of the beaches was conducted. Only beaches exhibiting significant erosion were presented, notably Saint-Paul Bay, with a retreat of approximately X%, and Saint-Benoît beach, with an estimated retreat of Y%.
+											  </p>
+											  <p>
+												Thus, the SAET tool proved particularly well-suited to the coastal context of Réunion Island. It provides a robust, rapid, and efficient method for shoreline extraction over temporal series. This approach effectively addresses the initial challenge of replacing manual, labor-intensive, and time-consuming photointerpretation with an automated method.
+											  </p>
+											  <p>
+												Nevertheless, certain challenges remain, particularly regarding the management of dark shadows and coarse sediments. Future work will focus on the combined integration of multiple spectral indices and the optimization of empirical thresholding to enhance the robustness of the script across diverse beach types, while also improving the digitization method.
+											  </p>
+											  <a href="#" class="special">Learn more</a>
+											  
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<p>For further information or inquiries, please feel free to reach out by completing the contact form below. Your questions and feedback are highly valued and will be addressed promptly to support your understanding and collaboration.</p>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">E-mail</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="icon solid fa-home">
+									Cité Internationale<br />
+									20, Avenue Hippolyte Foucque<br />
+									97490 Saint-Denis<br />
+									Réunion, France
+								</li>
+								<li class="icon solid fa-phone">(+261) 693 81 23 59</li>
+								<li class="icon solid fa-envelope"><a href="#">jrayan.mitantsoanyhaja@gmail.com</a></li>
+								<li><a href="https://x.com/RowerNy" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i> x.com/RowerNy</a></li>							  
+								<li class="icon brands fa-facebook-f"><a href="https://facebook.com/profile.php?id=61571394063716" target="_blank" rel="noopener noreferrer">facebook.com/profile.php?id=61571394063716</a></li>
+								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/jonathan-rayan-rower-mitantsoa-ny-haja-harilala-17a440348/" target="_blank" rel="noopener noreferrer">linkedin.com/in/jonathan-rayan-rower-mitantsoa-ny-haja-harilala-17a440348</a></li>
+								<li class="icon brands fa-skype"><a href="skype:@rayanmitantsoa?call" target="_blank" rel="noopener noreferrer">skype:@rayanmitantsoa</a></li>							  
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
